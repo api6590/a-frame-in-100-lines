@@ -5,12 +5,12 @@ import { NEXT_PUBLIC_URL } from './config';
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
-      label: 'Story time!',
+      label: 'Story Time!',
     },
     {
       action: 'link',
-      label: 'Link to Google',
-      target: 'https://www.google.com',
+      label: 'View Portfolio',
+      target: 'https://aaliyahpierre.com/',
     },
     {
       label: 'Redirect to pictures',
@@ -18,22 +18,22 @@ const frameMetadata = getFrameMetadata({
     },
   ],
   image: {
-    src: `${NEXT_PUBLIC_URL}/park-3.png`,
+    src: `${NEXT_PUBLIC_URL}/land-bw.png`, // Relative path to land-bw.png in the public folder
     aspectRatio: '1:1',
   },
   input: {
-    text: 'Tell me a boat story',
+    text: 'What would you like to see?',
   },
   postUrl: `${NEXT_PUBLIC_URL}/api/frame`,
 });
 
 export const metadata: Metadata = {
-  title: 'zizzamia.xyz',
+  title: 'Aaliyah first edited frame',
   description: 'LFG',
   openGraph: {
-    title: 'zizzamia.xyz',
+    title: 'Aaliyah first edited frame',
     description: 'LFG',
-    images: [`${NEXT_PUBLIC_URL}/park-1.png`],
+    images: [`${NEXT_PUBLIC_URL}/land-bw.png`], // Relative path to land-bw.png in the public folder
   },
   other: {
     ...frameMetadata,
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <h1>zizzamia.xyz</h1>
+      <h1>Aaliyah first edited frame</h1>
     </>
   );
 }
